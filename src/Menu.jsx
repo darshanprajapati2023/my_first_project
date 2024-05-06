@@ -17,6 +17,7 @@ const Menu = () => {
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                         <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+                        <Nav.Link as={Link} to="/lifecycle">Lifecycle - Class</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
