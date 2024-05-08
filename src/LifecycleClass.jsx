@@ -29,7 +29,18 @@ export default class LifecycleClass extends Component {
     }
     shouldComponentUpdate() {
         console.log('should component update called...');
-        return false
+        return true
+    }
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log("get Snapshot before update called...");
+        console.log("Prev color is " + prevState.color);
+        return null
+    }
+    componentDidUpdate() {
+        console.log('finally component updated...');
+    }
+    componentWillUnmount() {
+        console.log('Lifecycle completed..');
     }
     render() {
         console.log('render calling...');
